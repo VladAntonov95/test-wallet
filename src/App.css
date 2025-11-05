@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 428px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+}
+
+/* TransactionsList Styles */
+.transactions-list {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: #1d1d1f;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+}
+
+/* Balance Card */
+.balance-card {
+  grid-column: 1;
+}
+
+.balance-amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 4px;
+}
+
+.available-amount {
+  font-size: 14px;
+  color: #86868b;
+  font-weight: 500;
+}
+
+/* Payment Card */
+.payment-card {
+  grid-column: 2;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.payment-message {
+  font-size: 13px;
+  color: #86868b;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.payment-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #e8e8ed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-icon i {
+  font-size: 24px;
+  color: #1d1d1f;
+}
+
+/* Points Card */
+.points-card {
+  grid-column: 1 / -1;
+}
+
+.points-amount {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+/* Transactions Section */
+.transactions-section {
+  margin-top: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: #1d1d1f;
+}
+
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transaction-item {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.transaction-item:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.transaction-icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.transaction-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.transaction-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.transaction-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.pending-badge {
+  font-size: 12px;
+  font-weight: 500;
+  color: #86868b;
+}
+
+.transaction-description {
+  font-size: 14px;
+  color: #86868b;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.transaction-date-line {
+  font-size: 14px;
+  color: #86868b;
+}
+
+.authorized-user {
+  font-weight: 500;
+}
+
+.transaction-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.transaction-amount {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.rewards-percent {
+  font-size: 12px;
+  color: #86868b;
+  font-weight: 500;
+}
+
+.transaction-arrow {
+  font-size: 14px;
+  color: #c7c7cc;
+  margin-top: 4px;
+}
+
+/* TransactionDetail Styles */
+.transaction-detail {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.back-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+.back-button i {
+  font-size: 18px;
+  color: #1d1d1f;
+}
+
+.detail-top-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.detail-amount {
+  font-size: 64px;
+  font-weight: 700;
+  color: #1d1d1f;
+  letter-spacing: -2px;
+  margin-bottom: 8px;
+}
+
+.detail-name {
+  font-size: 18px;
+  color: #8e8e93;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+
+.detail-datetime {
+  font-size: 16px;
+  color: #8e8e93;
+  font-weight: 400;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.detail-status-section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5ea;
+  margin-bottom: 20px;
+}
+
+.detail-status-label {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.status-value {
+  font-weight: 700;
+}
+
+.detail-card-info {
+  font-size: 16px;
+  color: #8e8e93;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.detail-total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-label {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+.total-amount {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 428px) {
+  .app {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "cardLimit": 1500,
+  "cardBalance": 17.3,
+  "transactions": [
+    {
+      "id": "1",
+      "type": "credit",
+      "amount": 14.06,
+      "name": "Apple",
+      "description": "Card Number Used",
+      "date": "2025-11-05T00:00:00Z",
+      "pending": true,
+      "authorizedUser": "Diana",
+      "icon": "mobile-alt",
+      "rewardsPercent": 3
+    },
+    {
+      "id": "2",
+      "type": "payment",
+      "amount": 174.0,
+      "name": "Payment",
+      "description": "From JPMorgan Chase Bank Natio...",
+      "date": "2025-11-02T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "credit-card",
+      "rewardsPercent": null
+    },
+    {
+      "id": "3",
+      "type": "credit",
+      "amount": 3.24,
+      "name": "Apple",
+      "description": "Card Number Used",
+      "date": "2025-11-02T00:00:00Z",
+      "pending": false,
+      "authorizedUser": "Diana",
+      "icon": "mobile-alt",
+      "rewardsPercent": 3
+    },
+    {
+      "id": "4",
+      "type": "payment",
+      "amount": 99.71,
+      "name": "Payment",
+      "description": "From JPMorgan Chase Bank Natio...",
+      "date": "2025-11-01T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "credit-card",
+      "rewardsPercent": null
+    },
+    {
+      "id": "5",
+      "type": "payment",
+      "amount": 73.58,
+      "name": "Payment",
+      "description": "From JPMorgan Chase Bank Natio...",
+      "date": "2025-10-31T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "credit-card",
+      "rewardsPercent": null
+    },
+    {
+      "id": "6",
+      "type": "credit",
+      "amount": 21.61,
+      "name": "IKEA",
+      "description": "Round Rock, TX",
+      "date": "2025-10-29T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "store",
+      "rewardsPercent": 2
+    },
+    {
+      "id": "7",
+      "type": "credit",
+      "amount": 73.58,
+      "name": "Target",
+      "description": "Cedar Park, TX",
+      "date": "2025-10-27T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "shopping-cart",
+      "rewardsPercent": 2
+    },
+    {
+      "id": "8",
+      "type": "credit",
+      "amount": 156.89,
+      "name": "Whole Foods",
+      "description": "Austin, TX",
+      "date": "2025-10-24T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "shopping-basket",
+      "rewardsPercent": 2
+    },
+    {
+      "id": "9",
+      "type": "credit",
+      "amount": 42.3,
+      "name": "Starbucks",
+      "description": "Mobile Order",
+      "date": "2025-10-22T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "coffee",
+      "rewardsPercent": 1
+    },
+    {
+      "id": "10",
+      "type": "payment",
+      "amount": 250.0,
+      "name": "Payment",
+      "description": "From JPMorgan Chase Bank Natio...",
+      "date": "2025-10-19T00:00:00Z",
+      "pending": false,
+      "authorizedUser": null,
+      "icon": "credit-card",
+      "rewardsPercent": null
+    }
+  ]
+}
